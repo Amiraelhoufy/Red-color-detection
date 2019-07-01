@@ -12,7 +12,7 @@ while cap.isOpened():
     lower=np.array([-10, 100, 100])
     upper=np.array([10, 255, 255])
 
-    #check if the HSV of the frame is lower or upper redq
+    #check if the HSV of the frame is lower or upper red
     Red_mask = cv2.inRange(HSV,lower, upper)
     result = cv2.bitwise_and(frame, frame, mask = Red_mask)
 
